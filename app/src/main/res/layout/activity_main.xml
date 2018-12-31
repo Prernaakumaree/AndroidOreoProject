@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="This is Android Example project !!!"
+        android:layout_margin="8dp"
+        android:textSize="16sp"
+        android:textStyle="bold|italic"
+        android:textColor="@color/colorPrimary"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <Button
+        android:id="@+id/job_intent_service"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:text="1. JOB INTENT service"
+        android:gravity="start | center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textview"/>
+
+    <Button
+        android:id="@+id/job_service"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="2. Job service"
+        android:layout_margin="8dp"
+        android:gravity="start | center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/job_intent_service"/>
+
+    <Button
+        android:id="@+id/foreground_service"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="3. Foreground service"
+        android:layout_margin="8dp"
+        android:gravity="start | center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/job_service"/>
+
+    <Button
+        android:id="@+id/another_example"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="4. Another example"
+        android:layout_margin="8dp"
+        android:gravity="start | center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/foreground_service"/>
+
+
+</android.support.constraint.ConstraintLayout>
