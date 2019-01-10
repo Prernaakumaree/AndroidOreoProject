@@ -5,6 +5,8 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.widget.Toast;
 
+import com.google.firebase.analytics.FirebaseAnalytics;
+
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 import example.android.prerna.com.androidexampleproject.databinding.DataBindingActivity;
@@ -15,12 +17,16 @@ import example.android.prerna.com.androidexampleproject.livedata.LoginActivity;
 
 public class MainActivity extends AppCompatActivity {
 
+    private static FirebaseAnalytics firebaseAnalytics;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
         ButterKnife.bind(this);
+
+        firebaseAnalytics = FirebaseAnalytics.getInstance(this);
 
     }
 
@@ -55,6 +61,10 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void statExampleActivity(Class<?> activityClass) {
+        Bundle bundle = new Bundle();
+        bundle.putString(FirebaseAnalytics.Param.CONTENT, activityClass.getSimpleName());
+        firebaseAnalytics.logEvent("Learning_list", bundle);
+
         Intent intent = new Intent(this, activityClass);
         startActivity(intent);
     }

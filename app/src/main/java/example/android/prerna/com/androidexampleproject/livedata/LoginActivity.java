@@ -7,7 +7,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.widget.Toast;
 
 import example.android.prerna.com.androidexampleproject.R;
-import example.android.prerna.com.androidexampleproject.databinding.EmailInputBinding;
+import example.android.prerna.com.androidexampleproject.databinding.LoginInputBinding;
 
 public class LoginActivity extends AppCompatActivity {
 
@@ -15,7 +15,7 @@ public class LoginActivity extends AppCompatActivity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        EmailInputBinding emailInputBinding = DataBindingUtil.setContentView(this, R.layout.login_input);
+        LoginInputBinding emailInputBinding = DataBindingUtil.setContentView(this, R.layout.login_input);
 
         LoginViewModel model = new LoginViewModel();
         emailInputBinding.setLoginViewModel(model);

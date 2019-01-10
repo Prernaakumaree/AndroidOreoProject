@@ -58,4 +58,8 @@ dependencies {
     // ButterKnife
     implementation "com.jakewharton:butterknife:$versions.butterknife"
     annotationProcessor "com.jakewharton:butterknife-compiler:$versions.butterknife"
+
+    implementation 'com.google.firebase:firebase-core:16.0.1'
 }
+
+apply plugin: 'com.google.gms.google-services'

@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "207701478050",
+    "firebase_url": "https://androidexampleproject-4385c.firebaseio.com",
+    "project_id": "androidexampleproject-4385c",
+    "storage_bucket": "androidexampleproject-4385c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:207701478050:android:31179063abfd779e",
+        "android_client_info": {
+          "package_name": "example.android.prerna.com.androidexampleproject"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "207701478050-07rg61be2vel5ddhmjj8ubf89l3hjuni.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBqjn5-zwyPK0_d1LrrN75FszqcyBlDVLo"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
