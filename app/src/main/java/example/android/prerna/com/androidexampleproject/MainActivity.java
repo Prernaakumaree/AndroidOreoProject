@@ -7,9 +7,11 @@ import android.widget.Toast;
 
 import butterknife.ButterKnife;
 import butterknife.OnClick;
+import example.android.prerna.com.androidexampleproject.databinding.DataBindingActivity;
 import example.android.prerna.com.androidexampleproject.forgroundservice.ExampleForegroundActivity;
 import example.android.prerna.com.androidexampleproject.jobintent.ExampleJobIntentService;
 import example.android.prerna.com.androidexampleproject.jobservice.ExampleJobActivity;
+import example.android.prerna.com.androidexampleproject.livedata.LoginActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -36,12 +38,24 @@ public class MainActivity extends AppCompatActivity {
 
     @OnClick (R.id.foreground_service)
     void onForegroundServiceButtonClick() {
-        Toast.makeText(this, "Starting Job Activity", Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, "Starting Foreground Service Activity", Toast.LENGTH_SHORT).show();
         statExampleActivity(ExampleForegroundActivity.class);
     }
 
+    @OnClick (R.id.data_binding)
+    void onDataBindingButtonClick() {
+        Toast.makeText(this, "Starting Data Binding Activity", Toast.LENGTH_SHORT).show();
+        statExampleActivity(DataBindingActivity.class);
+    }
+
+    @OnClick (R.id.live_data)
+    void onLiveDataButtonClick() {
+        Toast.makeText(this, "Starting Data Binding Activity", Toast.LENGTH_SHORT).show();
+        statExampleActivity(LoginActivity.class);
+    }
+
     private void statExampleActivity(Class<?> activityClass) {
-        Intent jobIntent = new Intent(this, activityClass);
-        startActivity(jobIntent);
+        Intent intent = new Intent(this, activityClass);
+        startActivity(intent);
     }
 }

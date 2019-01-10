@@ -3,7 +3,10 @@ package example.android.prerna.com.androidexampleproject;
 import android.app.Application;
 import android.app.NotificationChannel;
 import android.app.NotificationManager;
+import android.databinding.DataBindingUtil;
 import android.os.Build;
+
+import example.android.prerna.com.androidexampleproject.databinding.AppDataBindingComponent;
 
 public class MainApplication extends Application {
     public static final String CHANNEL_ID = "foregroundServiceChannel";
@@ -13,6 +16,8 @@ public class MainApplication extends Application {
         super.onCreate();
 
         createNotificationChannel();
+
+        DataBindingUtil.setDefaultComponent(new AppDataBindingComponent());
     }
 
     private void createNotificationChannel() {

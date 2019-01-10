@@ -51,14 +51,34 @@
         app:layout_constraintTop_toBottomOf="@+id/job_service"/>
 
     <Button
-        android:id="@+id/another_example"
+        android:id="@+id/data_binding"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="4. Another example"
+        android:text="4. Data Binding"
         android:layout_margin="8dp"
         android:gravity="start | center"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/foreground_service"/>
+
+    <Button
+        android:id="@+id/live_data"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="5. Live data"
+        android:layout_margin="8dp"
+        android:gravity="start | center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/data_binding"/>
+
+    <Button
+        android:id="@+id/another_example"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="6. Another example"
+        android:layout_margin="8dp"
+        android:gravity="start | center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/live_data"/>
 
 
 </android.support.constraint.ConstraintLayout>

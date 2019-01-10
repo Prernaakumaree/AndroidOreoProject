@@ -24,6 +24,8 @@
         <activity android:name=".jobintent.ExampleJobIntentActivity" />
         <activity android:name=".jobservice.ExampleJobActivity" />
         <activity android:name=".forgroundservice.ExampleForegroundActivity" />
+        <activity android:name=".databinding.DataBindingActivity" />
+        <activity android:name=".livedata.LoginActivity" />
 
         <service android:name=".jobintent.ExampleJobIntentService"
             android:permission="android.permission.BIND_JOB_SERVICE">

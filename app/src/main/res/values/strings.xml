@@ -3,7 +3,7 @@
 
     <string name="fg_service_desc">This is foreground Service demo. Services have a unique property; once ‘started’ they can run even if you put the app in background. But for good user experience you would want the user to know that, this sort of operation is going on.</string>
     <string name="job_intent_service_desc">This is Job Intent Service demo. Helper for processing work that has been enqueued for a job/service. When running on Android O or later, the work will be dispatched as a job via JobScheduler.enqueue. When running on older versions of the platform, it will use Context.startService</string>
-    <string name="job_service_desc">This is Job Service demo. This service executes each incoming job on a Handler running on your application's main thread. This means that you must offload your execution logic to another thread/handler/AsyncTask of your choosing.</string>
+    <string name="job_service_desc">This is Job Service demo. This service executes each incoming job on a Handler running on your application\'s main thread. This means that you must offload your execution logic to another thread/handler/AsyncTask of your choosing.</string>
 
     <string name="start_service">Start Service</string>
     <string name="stop_service">Stop Service</string>
